@@ -6,7 +6,7 @@
 /*   By: yobourai <yobourai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 23:21:21 by yobourai          #+#    #+#             */
-/*   Updated: 2024/09/24 00:24:57 by yobourai         ###   ########.fr       */
+/*   Updated: 2024/09/24 00:33:07 by yobourai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ int	main(int ac, char *av[])
 		return (0);
 	a = parc(ac, av);
 	b = init(b, a->size);
-	if (a->size <= 5)
+	if (a->size <= 5 && sorted(a) == 1)
 		sort_five(a, b);
 	else if (a->size <= 100 && sorted(a) == 1)
 	{

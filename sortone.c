@@ -6,7 +6,7 @@
 /*   By: yobourai <yobourai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 23:04:21 by yobourai          #+#    #+#             */
-/*   Updated: 2024/09/24 00:17:48 by yobourai         ###   ########.fr       */
+/*   Updated: 2024/09/24 00:32:47 by yobourai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	sort_fc(t_stack *arr)
 {
-	if (arr->size <= 1 || sorted(arr) == 1)
+	if (arr->size <= 1)
 		return ;
 	if (arr->arr[arr->top] > arr->arr[arr->top - 1])
 		sa(arr);
@@ -34,7 +34,7 @@ void	pb2(t_stack *stack)
 
 void	sort_three(t_stack *stack)
 {
-	if (stack->size <= 2 || sorted(stack) == 1)
+	if (stack->size <= 2)
 	{
 		sort_fc(stack);
 		return ;

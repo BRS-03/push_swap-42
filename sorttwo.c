@@ -6,7 +6,7 @@
 /*   By: yobourai <yobourai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 23:04:32 by yobourai          #+#    #+#             */
-/*   Updated: 2024/09/24 00:26:15 by yobourai         ###   ########.fr       */
+/*   Updated: 2024/09/24 00:33:44 by yobourai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,6 @@ void	sort_five(t_stack *a, t_stack *b)
 {
 	int	min_index;
 
-	if (sorted(a) == 1)
-		return ;
 	while (a->top > 2)
 	{
 		min_index = ft_min(a);
